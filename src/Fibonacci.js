@@ -2,6 +2,9 @@ function Fibonacci() {
 }
 
 Fibonacci.prototype.calculate = function(n) {
+	if (n < 0) {
+		return undefined;
+	}
 	if (n === 0) { 
 		return 0;
 	}
